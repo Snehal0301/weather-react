@@ -45,6 +45,9 @@
   color: white;
   margin-right: 10px;
 }
+.home-section-2 .temperature .toggle {
+  border: 1px solid #fff;
+}
 .home-section-2 .detail-weather {
   margin-top: 10px;
   font-size: 22px;
@@ -59,25 +62,31 @@
   margin-top: 30px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 .home-section-3 .parameter {
-  width: 5%;
+  width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .home-section-3 .parameter img {
   width: 40px;
-  height: 40px;
+  height: 30px;
   margin-right: 20px;
 }
 .home-section-3 .parameter .temp-value {
-  background-color: red;
   display: flex;
   width: 100%;
   flex-direction: column;
+}
+.home-section-3 .parameter .temp-value .temp-title {
+  font-size: 20px;
+  color: white;
+}
+.home-section-3 .parameter .temp-value .temp-data {
+  font-size: 32px;
+  color: #fff;
 }
 
 .switch {

@@ -1,8 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
+    const [value, onChange] = useState("");
+
+    const [time, onChangeTime] = useState("");
+    const date = new Date();
+
+
+
+    setInterval(function () {
+
+        today();
+
+    }, 1000);
+
+
+
+
+
+    setInterval(function () {
+
+        todayTime();
+
+    }, 1000);
+
+
+
+    const today = () => {
+
+        onChange(
+
+            `${date.toLocaleString("en-us", {
+
+                weekday: "short",
+
+            })} ${date.getDate()}, ${date.toLocaleString("en-us", {
+
+                month: "short",
+
+            })} ${date.getFullYear()} `
+
+        );
+
+    };
+
+
+
+    const todayTime = () => {
+
+        onChangeTime(
+
+            ` ${date.toLocaleString("en-US", {
+
+                hour: "numeric",
+
+                minute: "numeric",
+
+                // second: "numeric",
+
+                hour12: true,
+
+            })}`
+
+        );
+
+    };
+
     return (
         <div className="nav">
             <div className="section-1">
@@ -22,7 +87,7 @@ const Navbar = () => {
                     <NavLink to='/search' >Recent Search</NavLink>
                 </div>
                 <div className="time">
-                    Wed, 28 Nov 2018    11:35 AM
+                    {value}&nbsp;&nbsp;{time}
                 </div>
             </div>
         </div>

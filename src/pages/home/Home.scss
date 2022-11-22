@@ -51,6 +51,10 @@
             margin-right: 10px;
         }
 
+        .toggle{
+            border: 1px solid #fff;
+        }
+
     }
 
     .detail-weather {
@@ -68,27 +72,36 @@
         margin-top: 30px;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        // overflow: auto;
         justify-content: space-around;
     }
 
     .parameter {
-        width: 5%;
+        width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         img{
             width: 40px;
-            height: 40px;
+            height: 30px;
             margin-right: 20px;
         }
 
         .temp-value{
-            background-color: red;
             display: flex;
             width: 100%;
             flex-direction: column;
+
+            .temp-title{
+                font-size: 20px;
+                color:#ffff
+            }
+
+            .temp-data{
+                font-size: 32px;
+                color: #fff;
+            }
         }
     }
 }

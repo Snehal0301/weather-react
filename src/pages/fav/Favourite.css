@@ -1,0 +1,57 @@
+.favourite {
+  display: flex;
+  flex-direction: column;
+}
+.favourite .favourite-section-1 {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.favourite .favourite-section-1 .city {
+  font-size: 18px;
+}
+.favourite .favourite-section-1 .remove {
+  cursor: pointer;
+}
+.favourite .favourite-section-2 .locations {
+  display: flex;
+  flex-direction: column;
+}
+.favourite .favourite-section-2 .locations .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.289);
+  height: 73px;
+  margin-bottom: 2px;
+}
+.favourite .favourite-section-2 .locations .location .location-section-1,
+.favourite .favourite-section-2 .locations .location .location-section-2 {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 49%;
+}
+.favourite .favourite-section-2 .locations .location .location-section-1 .location-name {
+  color: #fff;
+  font-size: 18px;
+}
+.favourite .favourite-section-2 .locations .location .location-section-2 .location-section-2-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.favourite .favourite-section-2 .locations .location .location-section-2 .location-section-2-title .location-section-2-degree {
+  font-size: 32px;
+  color: #fff;
+}
+.favourite .favourite-section-2 .locations .location .location-section-2 .location-section-2-title .location-section-2-desc {
+  font-size: 18px;
+  color: #fff;
+}
+.favourite .favourite-section-2 .locations .location .location-section-2 .heart {
+  margin-right: 30px;
+}
