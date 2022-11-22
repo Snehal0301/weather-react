@@ -1,0 +1,132 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-section-1 {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.home-section-1 .location {
+  font-size: 25px;
+}
+.home-section-1 .add-fav {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.home-section-1 .add-fav img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.home-section-1 .add-fav .fav-title {
+  margin-left: 7px;
+}
+
+.home-section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+  height: 45vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.299);
+}
+.home-section-2 .temperature {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.home-section-2 .temperature .degree {
+  font-size: 94px;
+  color: white;
+  margin-right: 10px;
+}
+.home-section-2 .detail-weather {
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.home-section-3 {
+  display: flex;
+  margin-top: 50px;
+}
+.home-section-3 .temp-parameters {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home-section-3 .parameter {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-section-3 .parameter img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.home-section-3 .parameter .temp-value {
+  background-color: red;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

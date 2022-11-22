@@ -1,0 +1,10 @@
+.app {
+    min-height: 100vh;
+    background-image: url('./assets/images/background.png');
+    /* background-image: linear-gradient(to right, #5d60d0, #6b62cd, #7765cb, #8168c8, #8a6bc6, #9269c1, #9868bb, #9e67b6, #a361ac, #a85ca1, #aa5796, #ac528b); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+}
